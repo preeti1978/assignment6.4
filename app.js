@@ -27,16 +27,16 @@ EmployeeArray.push(Employee); //pushing the object to the array. This is execute
 
 }
 
-//writing each object to console
-for (i=0; i<5; i++){
-	var j= parseInt(i)+1; //The Array index starts from 0 but we want to print SlNos starting from 1..5. So adding 1 to i for printing purpose only
+//writing each object to console using FOR ..IN loop
+for (var current in EmployeeArray){
+	var j= parseInt(current)+1; //The Array index starts from 0 but we want to print SlNos starting from 1..5. So adding 1 to current for printing purpose only
 	console.log("Printing Employee #"+j+"'s details");
-	console.log("name = "+EmployeeArray[i].name);
-	console.log("age = "+EmployeeArray[i].age);
-	console.log("salary ="+EmployeeArray[i].salary);
-	console.log("city="+EmployeeArray[i].city);
-	console.log("state = "+EmployeeArray[i].state);
-	console.log("pincode = "+EmployeeArray[i].pincode);
+	console.log("name = "+EmployeeArray[current].name);
+	console.log("age = "+EmployeeArray[current].age);
+	console.log("salary ="+EmployeeArray[current].salary);
+	console.log("city="+EmployeeArray[current].city);
+	console.log("state = "+EmployeeArray[current].state);
+	console.log("pincode = "+EmployeeArray[current].pincode);
 	
 }
 
